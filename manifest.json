@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Reddit Roulette",
+  "version": "1.0",
+  "description": "Easily get to a random subreddit by clicking a button. Wasting time has never been so easy.",
+  "icons": {
+    "16": "img/icon16.png",
+    "48": "img/icon48.png",
+    "128": "img/icon128.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "img/icon19.png",
+      "38": "img/icon38.png"
+    },
+    "default_title": "Jump to random subreddit!"
+  },
+  "background": {
+    "scripts": ["roulette.js"],
+    "persistent": false
+  },
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+}
